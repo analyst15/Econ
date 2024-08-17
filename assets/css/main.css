@@ -68,7 +68,7 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: #41b649;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -847,6 +847,9 @@ section,
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 30px;
+  }
+  .hero p{
+    font-size: 13px;
   }
 }
 
@@ -1999,7 +2002,7 @@ section,
 }
 
 .contact .php-email-form button[type=submit] {
-  background: var(--accent-color);
+  background: #193156 ;
   color: var(--contrast-color);
   border: 0;
   padding: 13px 50px;
