@@ -2270,3 +2270,122 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+.sectors {
+  padding-top: 60px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.sectors:before {
+  content: "";
+  background: color-mix(in srgb, #fff, transparent 30%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.sectors .sectors-bg {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.sectors .container {
+  position: relative;
+  z-index: 3;
+}
+
+.sectors .sectors-carousel,
+.sectors .sectors-slider {
+  overflow: hidden;
+}
+
+.sectors .sectors-item {
+  text-align: center;
+}
+
+.sectors .sectors-item .sectors-img {
+  width: 100px;
+  border-radius: 50%;
+  border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  margin: 0 auto;
+}
+
+.sectors .sectors-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+.sectors .sectors-item h4 {
+  font-size: 14px;
+  margin: 0 0 15px 0;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.sectors .sectors-item .stars {
+  margin-bottom: 15px;
+}
+
+.sectors .sectors-item .stars i {
+  color: #ffc107;
+  margin: 0 1px;
+}
+
+.sectors .sectors-item .quote-icon-left,
+.sectors .sectors-item .quote-icon-right {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  font-size: 26px;
+  line-height: 0;
+}
+
+.sectors .sectors-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.sectors .sectors-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
+.sectors .sectors-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+}
+
+.sectors .swiper-wrapper {
+  height: auto;
+}
+
+.sectors .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.sectors .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 50%);
+  opacity: 0.5;
+}
+
+.sectors .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--default-color);
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .sectors .sectors-item p {
+    width: 80%;
+  }
+}
