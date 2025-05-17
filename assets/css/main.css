@@ -2389,3 +2389,12 @@ section,
     width: 80%;
   }
 }
+
+#BuyTicket {
+  background: #193156 ;
+  color: var(--contrast-color);
+  border: 0;
+  padding: 13px 50px;
+  transition: 0.4s;
+  border-radius: 4px;
+}
