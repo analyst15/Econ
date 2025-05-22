@@ -2398,3 +2398,32 @@ section,
   transition: 0.4s;
   border-radius: 4px;
 }
+.selectable {
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.selectable:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.selectable.selected {
+  border: 2px solid #007bff;
+  background-color: #e9f5ff;
+}
+
+.ticket-tile {
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      transition: transform 0.2s ease, border-color 0.2s;
+      cursor: pointer;
+    }
+.ticket-tile:hover {
+      transform: scale(1.03);
+      border-color: #007bff;
+    }
+.ticket-tile.selected {
+      border-color: #007bff;
+      background-color: #e6f0ff;
+    }
